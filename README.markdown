@@ -10,6 +10,18 @@ See the [blog post](http://henrik.nyh.se/2007/08/tasks-bundle).
 
 ## Installation
 
+### Without git
+
+In a terminal:
+
+    cd /tmp
+    curl -L http://github.com/henrik/tasks.tmbundle/tarball/master > tasks.tar
+    tar xvf tasks.tar
+    mv henrik-tasks.tmbundle-* Tasks.tmbundle
+    open Tasks.tmbundle
+
+### With git, for hackers
+
 In a terminal:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
