@@ -12,7 +12,8 @@ See the [original blog post](http://henrik.nyh.se/2007/08/tasks-bundle).
 
 First, in a terminal:
 
-    cd ~/Library/Application Support/TextMate/Bundles
+    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
+    cd ~/Library/Application\ Support/TextMate/Bundles
     git clone git://github.com/henrik/tasks.tmbundle.git Tasks.tmbundle
     
 Then, in TextMate:
