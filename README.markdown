@@ -10,16 +10,12 @@ See the [blog post](http://henrik.nyh.se/2007/08/tasks-bundle).
 
 ## Installation
 
-First, in a terminal:
+In a terminal:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
     git clone git://github.com/henrik/tasks.tmbundle.git Tasks.tmbundle
-    
-Then, in TextMate:
-
-    Bundles > Bundle Editor > Reload Bundles
-
+    osascript -e 'tell app "TextMate" to reload bundles'
 
 ## Credits and license
 
