@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
@@ -22,6 +22,8 @@ if ENV['TM_SELECTED_TEXT']
 else  # Work with current line
   old_line = ENV['TM_CURRENT_LINE']
   new_line = old_line.gsub(/^(\s*)([#{Regexp.escape COMPLETED}#{Regexp.escape PENDING}])/u) { $1 + ($2==PENDING ? COMPLETED : PENDING) }
+  old_line = e_snp(old_line)
+  new_line = e_snp(new_line)
   column = ENV['TM_LINE_INDEX'].to_i
   unless $1 &amp;&amp; column &lt;= $1.length  # If we're past the line-initial whitespace,
     column += new_line.length - old_line.length  # compensate for different byte counts
