@@ -5,7 +5,7 @@
 
 ## Usage
 
-See the [blog post](http://henrik.nyh.se/2007/08/tasks-bundle).
+See the [blog post](http://thepugautomatic.com/2007/08/tasks-bundle).
 
 
 ## Installation
